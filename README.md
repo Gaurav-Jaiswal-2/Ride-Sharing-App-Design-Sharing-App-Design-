@@ -52,8 +52,14 @@ This document outlines the system design for a Ride-Sharing Web Application that
 
 ## 📦 Deployment and Infrastructure
 
-- Utilizes AWS services for hosting, storage, and content delivery.
-- Implements CI/CD pipelines for automated testing and deployment.
+- **AWS Services**: For hosting, storage, and content delivery, AWS provides a reliable, scalable, and secure cloud computing environment.
+
+- **Docker**: Docker is used to containerize the application, encapsulating it and its dependencies into a single container. This ensures consistency across different development, testing, and production environments, and simplifies deployment and scaling.
+
+- **Kubernetes**: As an orchestration platform, Kubernetes manages Docker containers across a cluster of servers, automating deployment, scaling, and operations of application containers. It enhances fault tolerance, provides service discovery and load balancing, and supports zero-downtime deployments and automatic rollback.
+
+- **Jenkins**: Integrated for Continuous Integration and Continuous Deployment (CI/CD), Jenkins automates the process of code integration, testing, and deployment. By building pipelines in Jenkins, we can ensure that the code is automatically tested and deployed to Kubernetes, facilitating a smooth and efficient development lifecycle.
+
 
 ## 📚 Conclusion
 
